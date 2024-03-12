@@ -3,11 +3,7 @@
 // Pipeline block
 pipeline {
 // Agent block
-agent {
-   node {
-      label 'crud'
-   }
-}
+agent any
 options {
    buildDiscarder(logRotator(numToKeepStr: '5'))
    timestamps()
